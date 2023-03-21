@@ -1,0 +1,15 @@
+# Write a program that takes a list of numbers and prints out the largest number in the list.
+
+lst_size = int(input("How many number do you wan tot enter in the list Specify below\n :> "))
+my_list = []
+largest_num = 0
+count = 1
+while len(my_list) < lst_size:
+    lst_input = int(input(f'Enter your {count} number: '))
+    my_list.append(lst_input)
+    count += 1
+
+for x in my_list:
+    if x > largest_num:
+        largest_num = x
+print(f'{largest_num} is the largest number from the list of {my_list} ')
